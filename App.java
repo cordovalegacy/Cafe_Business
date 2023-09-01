@@ -11,6 +11,9 @@ public static void main(String[] args) {
     Cafe streakGoal = new Cafe();
     Cafe orderTotal = new Cafe();
     Cafe menuList = new Cafe();
+    Cafe greetCustomer = new Cafe();
+    Cafe markupSheet = new Cafe();
+    Cafe display = new Cafe();
 
     //Method Calls
     //#1
@@ -26,5 +29,26 @@ public static void main(String[] args) {
     menuItems.add("Shake");
     menuItems.add("Drip");
     menuList.printMenu(menuItems);
+    //#4
+    ArrayList<String> customerNames = new ArrayList<String>();
+    customerNames.add("Tori");
+    customerNames.add("Brendan");
+    customerNames.add("Jacob");
+    customerNames.add("Matthew");
+    greetCustomer.addCustomer(customerNames);
+    //#5
+    markupSheet.printPriceChart("Columbian Coffee Grounds", 15.00, 3);
+    //#6
+    ArrayList<String> products = new ArrayList<String>();
+    products.add("Drip Coffee");
+    products.add("Coffee");
+    products.add("Drip");
+    products.add("Dripee");
+    ArrayList<Double> prices = new ArrayList<Double>();
+    prices.add(1.5);
+    prices.add(2.5);
+    prices.add(3.5);
+    prices.add(4.5);
+    display.displayMenu(products, prices);
 };
 };
